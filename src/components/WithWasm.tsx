@@ -1,9 +1,15 @@
 type Matrix = number[][];
 
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { multiplyMatrices } from '../logic/Matrix.ts';
 
-const WithoutWasm = () => {
+
+
+const WithWasm = () => {
+  useEffect(() => {
+    
+  }, [])
+
   const [mat1, setMat1] = useState<Matrix>([
     [0, 0],
     [0, 0],
@@ -92,4 +98,4 @@ const WithoutWasm = () => {
   )
 }
 
-export default WithoutWasm
+export default WithWasm
